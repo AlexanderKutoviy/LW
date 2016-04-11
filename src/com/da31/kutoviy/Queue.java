@@ -11,8 +11,9 @@ public class Queue {
     List<Product> items = new LinkedList<Product>();
     public static int MAX_SIZE = 10;
     ReentrantLock lock = new ReentrantLock();
-    Condition     emptyCondition = lock.newCondition();
-    Condition     fullCondition = lock.newCondition();
+    Condition emptyCondition = lock.newCondition();
+    Condition fullCondition = lock.newCondition();
+
     public /*synchronized*/ void push(Product item) {
         lock.tryLock();
         lock.lock();
@@ -31,12 +32,12 @@ public class Queue {
         }
     }
 
-    public /*synchronized*/ Product pull(){
+    public /*synchronized*/ Product pull() {
         Product result = null;
         lock.lock();
-        try{
+        try {
 
-            if( items.isEmpty() ){
+            if (items.isEmpty()) {
                 try {
                 /*wait();*/
                     emptyCondition.await();
@@ -46,9 +47,9 @@ public class Queue {
                 }
             }
 
-            result =  items.isEmpty() ? null :items.remove(0);
+            result = items.isEmpty() ? null : items.remove(0);
             fullCondition.signal();
-        }finally{
+        } finally {
             lock.unlock();
         }
         return result;

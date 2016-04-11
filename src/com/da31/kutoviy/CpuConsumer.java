@@ -7,10 +7,10 @@ public class CpuConsumer extends Thread {
         this.queue = queue;
     }
 
-    public void run(){
-        while( ! isInterrupted()){
+    public void run() {
+        while (!isInterrupted()) {
             Product prod = queue.pull();
-            if( prod != null){
+            if (prod != null) {
                 try {
                     System.out.println("Task is performing");
                     Thread.sleep(prod.time);
@@ -18,7 +18,7 @@ public class CpuConsumer extends Thread {
                 } catch (InterruptedException ex) {
                     return;
                 }
-            }else{
+            } else {
                 Thread.yield();
             }
         }
