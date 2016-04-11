@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="96f00c76-e998-402d-ba99-2456b8c6706b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/da31/kutoviy/CpuConsumer.java" afterPath="$PROJECT_DIR$/src/com/da31/kutoviy/CpuConsumer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/da31/kutoviy/Main.java" afterPath="$PROJECT_DIR$/src/com/da31/kutoviy/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/da31/kutoviy/ProcessProducer.java" afterPath="$PROJECT_DIR$/src/com/da31/kutoviy/ProcessProducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/da31/kutoviy/Product.java" afterPath="$PROJECT_DIR$/src/com/da31/kutoviy/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/da31/kutoviy/Queue.java" afterPath="$PROJECT_DIR$/src/com/da31/kutoviy/Queue.java" />
     </list>
     <ignored path="LW2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,34 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Queue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/da31/kutoviy/Queue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="e#1071#1072#0" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/da31/kutoviy/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/lang/Thread.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="725" column="0" selection-start-line="725" selection-start-column="0" selection-end-line="725" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -78,8 +52,8 @@
       <file leaf-file-name="ProcessProducer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/da31/kutoviy/ProcessProducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -111,9 +85,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/da31/kutoviy/Queue.java" />
-        <option value="$PROJECT_DIR$/src/com/da31/kutoviy/ProcessProducer.java" />
         <option value="$PROJECT_DIR$/src/com/da31/kutoviy/CpuConsumer.java" />
         <option value="$PROJECT_DIR$/src/com/da31/kutoviy/Product.java" />
+        <option value="$PROJECT_DIR$/src/com/da31/kutoviy/ProcessProducer.java" />
         <option value="$PROJECT_DIR$/src/com/da31/kutoviy/Main.java" />
       </list>
     </option>
@@ -257,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1460406276532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second attempt">
+      <created>1460411587890</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1460411587890</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -304,44 +285,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Second attempt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second attempt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/da31/kutoviy/Main.java</url>
-          <line>10</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/da31/kutoviy/Main.java</url>
-          <line>11</line>
-          <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/da31/kutoviy/Main.java</url>
-          <line>9</line>
-          <properties />
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/da31/kutoviy/Main.java</url>
-          <line>8</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/da31/kutoviy/Main.java</url>
-          <line>12</line>
+          <line>14</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/da31/kutoviy/Main.java</url>
-          <line>13</line>
+          <line>15</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
@@ -369,8 +327,14 @@
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/da31/kutoviy/Main.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -395,14 +359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/da31/kutoviy/CpuConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/da31/kutoviy/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -413,17 +369,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/da31/kutoviy/ProcessProducer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/da31/kutoviy/CpuConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="141">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/da31/kutoviy/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="386">
           <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#1071#1072#0" expanded="true" />
@@ -432,10 +388,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/da31/kutoviy/ProcessProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/da31/kutoviy/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        <state relative-caret-position="153">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
           <folding />
         </state>
       </provider>

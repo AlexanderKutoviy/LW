@@ -9,7 +9,7 @@ public class ProcessProducer extends Thread {
         this.queue2 = queue2;
     }
 
-    public void run() {
+    public synchronized void run() {
         while (!isInterrupted()) {
             pushToTheRightQueue(queue1, queue2, new Product(5));
             try {
@@ -20,7 +20,7 @@ public class ProcessProducer extends Thread {
         }
     }
 
-    public void pushToTheRightQueue(Queue queue1, Queue queue2, Product product) {
+    public synchronized void pushToTheRightQueue(Queue queue1, Queue queue2, Product product) {
         if (queue1.getSize() > queue2.getSize()) {
             System.out.println("Queue2 push");
             product.numOfQueue = "2";

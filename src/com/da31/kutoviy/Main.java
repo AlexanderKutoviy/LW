@@ -9,13 +9,17 @@ public class Main {
         CpuConsumer consumer = new CpuConsumer(queue1, queue2);
         CpuConsumer consumer2 = new CpuConsumer(queue1, queue2);
         ProcessProducer producer = new ProcessProducer(queue1,queue2);
+        ProcessProducer producer1 = new ProcessProducer(queue1,queue2);
         producer.start();
+        producer1.start();
         consumer.start();
         consumer2.start();
 
-        Thread.sleep(1000);
-//        consumer.interrupt();
-//        consumer2.interrupt();
-//        producer.interrupt();
+        Thread.sleep(100);
+        consumer.interrupt();
+        consumer2.interrupt();
+        producer.interrupt();
+        producer1.interrupt();
+
     }
 }
