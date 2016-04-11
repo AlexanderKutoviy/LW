@@ -3,20 +3,19 @@ package com.da31.kutoviy;
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {
-        Queue q = new Queue();
+        Queue queue1 = new Queue();
+        Queue queue2 = new Queue();
 
-        CpuConsumer consumer = new CpuConsumer(q);
-        ProcessProducer producer = new ProcessProducer(q);
-        consumer.start();
+        CpuConsumer consumer = new CpuConsumer(queue1, queue2);
+        CpuConsumer consumer2 = new CpuConsumer(queue1, queue2);
+        ProcessProducer producer = new ProcessProducer(queue1,queue2);
         producer.start();
-
-        //ProcessProducer producer = new ProcessProducer(q);
-        CpuConsumer consumer2 = new CpuConsumer(q);
+        consumer.start();
         consumer2.start();
 
-        Thread.sleep(15000);
-        consumer.interrupt();
-        consumer2.interrupt();
-        producer.interrupt();
+        Thread.sleep(1000);
+//        consumer.interrupt();
+//        consumer2.interrupt();
+//        producer.interrupt();
     }
 }

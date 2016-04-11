@@ -1,20 +1,38 @@
 package com.da31.kutoviy;
 
 public class ProcessProducer extends Thread {
-    Queue queue;
+    Queue queue1;
+    Queue queue2;
 
-    public ProcessProducer(Queue queue) {
-        this.queue = queue;
+    public ProcessProducer(Queue queue1, Queue queue2) {
+        this.queue1 = queue1;
+        this.queue2 = queue2;
     }
 
     public void run() {
         while (!isInterrupted()) {
-            queue.push(new Product(5));
+            pushToTheRightQueue(queue1, queue2, new Product(5));
             try {
-                Thread.sleep(20);
+                Thread.sleep(5);
             } catch (InterruptedException ex) {
                 return;
             }
+        }
+    }
+
+    public void pushToTheRightQueue(Queue queue1, Queue queue2, Product product) {
+        if (queue1.getSize() > queue2.getSize()) {
+            System.out.println("Queue2 push");
+            product.numOfQueue = "2";
+            queue2.push(product);
+        }else if (queue1.getSize() < queue2.getSize()) {
+            System.out.println("Queue1 push");
+            product.numOfQueue = "1";
+            queue1.push(product);
+        }else{
+            System.out.println("Queue1 push");
+            product.numOfQueue = "1";
+            queue1.push(product);
         }
     }
 }
