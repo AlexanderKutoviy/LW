@@ -1,0 +1,55 @@
+#include <cstdlib> 
+#include <ctime> 
+#include <omp.h>
+#include <iostream>
+
+using namespace std;
+
+void printMatrix(int**,int,int);
+
+int main(){
+	srand(time(0));
+
+	int size;
+	cout<<"\nEnter matrix size --> ";  
+	cin>>size;
+      
+	int** matr = new int*[size];
+	for ( int i = 0; i < size; i++ ) {
+        matr[i] = new int[size];
+        for ( int j = 0; j < size; j++ ) {
+            matr[i][j] = rand()%10;
+		}
+	}
+
+	int** transposedMatr = new int*[size];
+	for ( int i = 0; i < size; i++ ) {
+        transposedMatr[i] = new int[size];
+	}
+	int buffer = 0;
+
+ #pragma omp parallel
+ {     
+     #pragma omp for nowait
+     for (int i = 0; i < size; i++) {
+		 for(int j = 0; j < size; j++ ) {
+			transposedMatr[j][i] = matr[i][j];
+		 }
+     }
+  }
+
+  printMatrix(matr, size, size);
+  printMatrix(transposedMatr, size, size);
+  system("pause");
+  return 0;
+}
+
+void printMatrix(int** mas, int n,int m) {
+	cout <<"\n";
+	for (int i=0; i< n; i++) {
+		for (int j=0; j< m; j++) {
+			cout<< mas[i][j]<<"  ";     
+		}
+		cout<<"\n";
+	}
+}
